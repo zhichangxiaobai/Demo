@@ -1,0 +1,29 @@
+public class zhichuandi {
+    int id ;
+    String name;
+    String Pwd;   
+    //静态变量
+    static String company="北京尚学堂";//公司名称
+    //构造方法
+    public zhichuandi(int id ,String name){
+    	this.id=id;
+    	this.name=name;
+    }
+    public void ParameterTransfer(zhichuandi z){
+    	z.name="张日上";
+    	
+    }
+    
+    public void ParameterTransfers(zhichuandi z){
+    	z.name="张上";
+    	
+    }
+    
+    public static void main(String[] args) {
+    	zhichuandi th = new zhichuandi(101,"张良");
+    	th.ParameterTransfer(th);
+    	 System.out.println(th.name);
+    	th.ParameterTransfers(th);
+    System.out.println(th.name);
+}
+    }
